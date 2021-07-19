@@ -1,8 +1,7 @@
 .hero__overlay {
-    width: 320px;
+    width: 100%;
     height: 600px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
@@ -17,11 +16,11 @@
  
  .hero {
    text-align: center;
+   height: 600px;
    padding-top: 200px;
    padding-bottom: 200px; 
-
+   
 }
-
 
 @media screen and (min-device-pixel-ratio: 2),
    (min-resolution: 192dpi),
@@ -30,15 +29,15 @@
        background-image: linear-gradient(
          rgba(47, 48, 58, 0.4),
          rgba(47, 48, 58, 0.4)
-       ), url(../images/mob/hero@2x.jpg);
+       ), url(../images/mob/hero_mob@2x.jpg);
    }
 }
 @media screen and (min-width: 768px) {
-   .hero {
+   .hero{
        background-image: linear-gradient(
          rgba(47, 48, 58, 0.4),
          rgba(47, 48, 58, 0.4)
-       ), url(../images/tablet/hero@2x.jpg);
+       ), url(../images/tablet/hero_tab@2x.jpg);
    }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
@@ -48,7 +47,7 @@
        background-image: linear-gradient(
          rgba(47, 48, 58, 0.4),
          rgba(47, 48, 58, 0.4)
-       ), url(../images/tablet/hero@2x.jpg);
+       ), url(../images/tablet/hero_tab@2x.jpg);
    }
 }
 @media screen and (min-width: 1200px) {
@@ -56,7 +55,7 @@
        background-image: linear-gradient(
          rgba(47, 48, 58, 0.4),
          rgba(47, 48, 58, 0.4)
-       ), url(../images/desktop/hero@2x.jpg);
+       ), url(../images/desktop/hero_des@2x.jpg);
    }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
@@ -66,29 +65,27 @@
        background-image: linear-gradient(
          rgba(47, 48, 58, 0.4),
          rgba(47, 48, 58, 0.4)
-       ), url(../images/desktop/hero@2x.jpg);
+       ), url(../images/desktop/hero_des@2x.jpg);
    }
 }
 
-//  @media (min-device-pixel-ratio: 2) and (max-width: 480px),
-//  (min-resolution: 192dpi) and (max-width: 480px),
-//  (min-resolution: 2dppx) and (max-width: 480px) {
-//     .hero__overlay {
-//        background-image: url(../images/mob/hero@2x.jpg);
-//     }
-//  }
+//
 
 
 
  .hero__title{ 
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: 1.6;
     letter-spacing: 0.06em; 
-    width: 682px;
-    
+   //  width: 682px;
+    text-align: center;
     margin: auto; 
 
     color: #FFFFFF;
+    @media screen and (min-width: 1200px){
+      font-size: 44px;
+      line-height: 1.36;
+      }
  }
 
