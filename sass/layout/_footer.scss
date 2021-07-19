@@ -1,0 +1,80 @@
+.footer{
+    background-color: #2F303A;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    
+}
+.footer-flex{
+    display: flex;
+   
+}
+
+address {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    margin-top: 20px;
+    margin-bottom: 9px;
+}
+
+.footer-address__link {
+    /* от браузера наследует italic, поэтому указала нормал */
+    font-weight: 400;   
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.02em;
+    color: $primary-text-color;
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 9px;
+}
+
+
+
+.footer-address__link:hover,
+.footer-address__link:focus {
+    color: $accent-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+
+
+
+/* Форма подвала */
+
+.form-subscribe{ 
+    display: flex block;
+    margin-left: 93px;
+}
+.form-subscribe__title {
+    color: #fff;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+    margin-bottom: 20px;
+}
+
+.form-subscribe__placeholder{
+    font-size: 16px;
+    box-sizing: border-box;
+   
+}
+
+.form-subscribe__input{
+    width: 358px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: #2F303A;
+    padding-top: 15px;
+    padding-left: 16px;
+    padding-bottom: 15px;
+    border-radius: 4px;
+    color: #fff;
+   
+}
+

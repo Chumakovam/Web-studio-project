@@ -1,0 +1,94 @@
+.hero__overlay {
+    width: 320px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ), url(../images/hero.jpg);
+    background-color: #C4C4C4;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+ }
+ 
+ .hero {
+   text-align: center;
+   padding-top: 200px;
+   padding-bottom: 200px; 
+
+}
+
+
+@media screen and (min-device-pixel-ratio: 2),
+   (min-resolution: 192dpi),
+   (min-resolution: 2dppx) {
+   .hero {
+       background-image: linear-gradient(
+         rgba(47, 48, 58, 0.4),
+         rgba(47, 48, 58, 0.4)
+       ), url(../images/mob/hero@2x.jpg);
+   }
+}
+@media screen and (min-width: 768px) {
+   .hero {
+       background-image: linear-gradient(
+         rgba(47, 48, 58, 0.4),
+         rgba(47, 48, 58, 0.4)
+       ), url(../images/tablet/hero@2x.jpg);
+   }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+   (min-resolution: 192dpi),
+   (min-resolution: 2dppx) {
+   .hero {
+       background-image: linear-gradient(
+         rgba(47, 48, 58, 0.4),
+         rgba(47, 48, 58, 0.4)
+       ), url(../images/tablet/hero@2x.jpg);
+   }
+}
+@media screen and (min-width: 1200px) {
+   .hero{
+       background-image: linear-gradient(
+         rgba(47, 48, 58, 0.4),
+         rgba(47, 48, 58, 0.4)
+       ), url(../images/desktop/hero@2x.jpg);
+   }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
+   (min-resolution: 192dpi),
+   (min-resolution: 2dppx) {
+   .hero{
+       background-image: linear-gradient(
+         rgba(47, 48, 58, 0.4),
+         rgba(47, 48, 58, 0.4)
+       ), url(../images/desktop/hero@2x.jpg);
+   }
+}
+
+//  @media (min-device-pixel-ratio: 2) and (max-width: 480px),
+//  (min-resolution: 192dpi) and (max-width: 480px),
+//  (min-resolution: 2dppx) and (max-width: 480px) {
+//     .hero__overlay {
+//        background-image: url(../images/mob/hero@2x.jpg);
+//     }
+//  }
+
+
+
+ .hero__title{ 
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em; 
+    width: 682px;
+    
+    margin: auto; 
+
+    color: #FFFFFF;
+ }
+
