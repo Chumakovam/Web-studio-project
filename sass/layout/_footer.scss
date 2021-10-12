@@ -4,10 +4,27 @@
     padding-bottom: 60px;
     
 }
-// .footer-flex{
-//     display: flex;
+.footer-flex{
+    @media screen and (min-width: 768px){
+        max-width: 768px;
+        display: flex;
+        }
+        
    
-// }
+}
+.footer-address{
+        text-align: center;
+        @media screen and (min-width: 768px){
+            max-width: 768px;
+            margin-right: 165px;
+            margin-left: 76px;
+            align-items: center;
+            justify-content: center;
+          }
+            } 
+    
+    
+
 
 address {
     font-style: normal;
@@ -49,8 +66,18 @@ address {
 /* Форма подвала */
 
 .form-subscribe{ 
-    display: flex block;
-    margin-left: 93px;
+    text-align: center;
+    // display: flex block;
+    // margin-left: 93px;
+    @media screen and (min-width: 768px){
+        max-width: 768px;
+     flex-direction: column;
+     display: flex;
+        }
+        @media screen and (min-width: 1200px){
+            max-width: 1200px;
+        
+            }
 }
 .form-subscribe__title {
     color: #fff;
@@ -58,6 +85,7 @@ address {
     line-height: 1.1;
     letter-spacing: 0.03em;
     margin-bottom: 20px;
+    margin-top: 60px;
 }
 
 .form-subscribe__placeholder{
@@ -67,7 +95,7 @@ address {
 }
 
 .form-subscribe__input{
-    width: 358px;
+    width: 450px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     background-color: #2F303A;
     padding-top: 15px;
@@ -75,6 +103,9 @@ address {
     padding-bottom: 15px;
     border-radius: 4px;
     color: #fff;
+    @media screen and (min-width: 1200px) {
+        width: 358px;
+    }
    
 }
 

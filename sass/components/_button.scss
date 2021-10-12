@@ -19,19 +19,20 @@
 
  .button__hero {
     // margin-top: 30px;
-    margin-left: 140px;
-    padding: 8px 31px;  
+    margin: 0 auto;
+    display: block;
+    padding: 10px 32px;  
     text-align: center;  
   
     @media screen and (min-width: 768px){
-        margin-left: 284px;
+       
         line-height: 1.9; 
         
         
     } 
 
     @media screen and (min-width: 1200px){
-        margin-left: 700px;
+       
         // margin-top: 30px;
         line-height: 1.9;   
         
@@ -40,10 +41,17 @@
 
 
  .button__subscribe {
-    position: absolute;
+    position: relative;
     padding: 15px 28px;
     padding-right: 62px;
-    margin-left: 12px;  
+    margin-left: 12px; 
+    margin-top: 20px; 
+    @media screen and (min-width: 768px){
+       
+    width: 200px;
+    margin-left: 291px;
+           
+    } 
     
 }
 

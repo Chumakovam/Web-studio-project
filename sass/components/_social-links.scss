@@ -1,6 +1,8 @@
 .social-list {
     display: flex;
     margin-top: 16px; 
+    justify-content: center;
+    align-items: center;
    
 }
 .social-list__item:not(:last-child){
@@ -46,10 +48,15 @@
 }
 
 .footer-social {
-    margin-left: 137px;
-    margin-right: 137px;
-    margin-top: 60px;
- 
+    // margin-left: 137px;
+    // margin-right: 137px;
+    // margin-top: 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       
+        text-align: center;
+        
 }
 
 .social-list__link--black{
