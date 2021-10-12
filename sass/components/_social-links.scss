@@ -50,12 +50,14 @@
 .footer-social {
     // margin-left: 137px;
     // margin-right: 137px;
-    // margin-top: 60px;
+    margin-top: 60px;
         display: flex;
         flex-direction: column;
         align-items: center;
-       
         text-align: center;
+        @media screen and (min-width: 768px) {
+           margin-top: 0;
+          }
         
 }
 

@@ -1,128 +1,121 @@
-.footer{
-    background-color: #2F303A;
-    padding-top: 60px;
-    padding-bottom: 60px;
-    
+.footer {
+  background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
-.footer-flex{
-    @media screen and (min-width: 768px){
-        max-width: 768px;
-        display: flex;
-        }
-   
+.footer-flex {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
-.footer-desc{
-    @media screen and (min-width: 1200px){
-        max-width: 1200px;
-        display: flex;
-        
-        }
+.footer-desc {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
-.footer-address{
-        text-align: center;
-        @media screen and (min-width: 768px){
-            max-width: 768px;
-            margin-right: 165px;
-            margin-left: 76px;
-            align-items: center;
-            justify-content: center;
-          }
-          @media screen and (min-width: 1200px){
-            max-width: 1200px;
-            margin-right: 71px;
-            // display: flex;
-            // margin-left: 215px;
-            align-items: center;
-            justify-content: center;
-            }
-            } 
-    
-    
-
+.footer-address {
+  text-align: center;
+  @media screen and (min-width: 768px) {
+    margin-right: 165px;
+    align-items: center;
+    justify-content: center;
+  }
+  @media screen and (min-width: 1200px) {
+    justify-content: flex-end;
+    margin-right: 70px;
+    text-align: left;
+  }
+}
 
 address {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.7;
-    letter-spacing: 0.03em;
-    color: #FFFFFF;
-    margin-top: 20px;
-    margin-bottom: 9px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  margin-top: 20px;
+  margin-bottom: 9px;
 }
 
 .footer-address__link {
-    /* от браузера наследует italic, поэтому указала нормал */
-    font-weight: 400;   
-    font-size: 14px;
-    line-height: 1.7;
-    letter-spacing: 0.02em;
-    color: $primary-text-color;
-    color: rgba(255, 255, 255, 0.6);
-    text-decoration: none;
-    display: inline-block;
-    margin-bottom: 9px;
+  /* от браузера наследует italic, поэтому указала нормал */
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.02em;
+  color: $primary-text-color;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 9px;
 }
-
-
 
 .footer-address__link:hover,
 .footer-address__link:focus {
-    color: $accent-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  color: $accent-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-
-
-
 
 /* Форма подвала */
 
-.form-subscribe{ 
-    text-align: center;
-    // display: flex block;
-    // margin-left: 93px;
-    @media screen and (min-width: 768px){
-      
-     flex-direction: column;
-     align-items: center;
-     display: flex;
-        }
-        @media screen and (min-width: 1200px){
-           
-          display: flex block;
-  
-            }
+.form-subscribe {
+  text-align: center;
+  // display: flex block;
+  // margin-left: 93px;
+  @media screen and (min-width: 768px) {
+    flex-direction: column;
+    display: flex;
+  }
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 .form-subscribe__title {
-    color: #fff;
-    font-size: 14px;
-    line-height: 1.1;
-    letter-spacing: 0.03em;
-    margin-bottom: 20px;
-    margin-top: 60px;
+  color: #fff;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  margin-bottom: 20px;
+  margin-top: 60px;
+  @media screen and (min-width: 1200px) {
+    margin-top: 0;
+  }
 }
 
-.form-subscribe__placeholder{
-    font-size: 16px;
-    box-sizing: border-box;
-   
+.form-subscribe__placeholder {
+  font-size: 16px;
+  box-sizing: border-box;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
 }
 
-.form-subscribe__input{
+.form-subscribe__input {
+  width: 100%;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: #2f303a;
+  padding-top: 15px;
+  padding-left: 16px;
+  padding-bottom: 15px;
+  border-radius: 4px;
+  color: #fff;
+  @media screen and (min-width: 768px) {
     width: 450px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    background-color: #2F303A;
-    padding-top: 15px;
-    padding-left: 16px;
-    padding-bottom: 15px;
-    border-radius: 4px;
-    color: #fff;
-    @media screen and (min-width: 1200px) {
-        width: 358px;
-    }
-   
+  }
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+  }
 }
-
