@@ -29,14 +29,14 @@
      margin-bottom: 30px;
      margin-right: 30px; 
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
     flex-basis: calc((100% - 60px) / 2 );
     &:nth-child(2n) {
         margin-right: 0;
     }
   }
    
-    @media screen and (min-width: 768px){
+    @media screen and (min-width: 768px) and (max-width: 1200px) {
         // text-align: center;
         flex-basis: calc((100% - 90px) / 3 );
         &:nth-child(3n) {

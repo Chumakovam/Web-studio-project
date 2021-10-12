@@ -18,10 +18,24 @@
 
 
  .button__hero {
-    margin-top: 30px;
-    line-height: 1.9;   
-    padding: 8px 31px;
+    // margin-top: 30px;
+    margin-left: 140px;
+    padding: 8px 31px;  
+    text-align: center;  
   
+    @media screen and (min-width: 768px){
+        margin-left: 284px;
+        line-height: 1.9; 
+        
+        
+    } 
+
+    @media screen and (min-width: 1200px){
+        margin-left: 700px;
+        // margin-top: 30px;
+        line-height: 1.9;   
+        
+    } 
  }
 
 

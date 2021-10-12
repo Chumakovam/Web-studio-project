@@ -18,14 +18,17 @@
 
 <body>
 
-    <!-- <header class="page-header">
+    <header class="page-header">
 
         <div class="container">
             <div class="nav">
       <nav class="nav-menu" >
     
       <a href="./index.html" class="logo logo--color-black"> <span>Web</span>Studio</a>
+
+   
       
+       
        <ul class="nav-list">
           <li class="nav-list__item">
               <a href="./index.html" class="nav-list__link current" >Студия</a>
@@ -58,10 +61,60 @@
             +38 096 111 11 11</a> 
     </li>
   </ul>
+
+<button type="button" class="menu-open">
+    <svg class="burger" width="24px" height="16px">
+        <use href="./images/svg/burger.svg#icon-burger" ></use>
+    </svg> 
+</button>
+    </div>
+    <div class="mob-menu is-hidden" >
+      <div class="container">
+      <button class="btn-close">
+        <svg class="modal-close-icon" width="18" height="18">
+          <use href="./images/svg/symbol-defs.svg#icon-close-black-18dp-2-1-2"></use>
+        </svg>
+        </button>
+        <ul class="mob-menu-list list">
+          <li class="mob-menu-list__item">
+            <a href="" class="mob-menu-list__link">Студия</a>
+          </li>
+          <li class="mob-menu-list__item">
+            <a href="" class="mob-menu-list__link">Портфолио</a>
+          </li>
+          <li class="mob-menu-list__item">
+            <a href="" class="mob-menu-list__link">Контакты</a>
+          </li>
+        </ul>
+        <div class="mob-menu-bottom">
+          <ul class="mob-menu-contacts list">
+            <li class="mob-menu-contacts__item">
+              <a href="" class="mob-menu-contacts__link mob-menu-contacts__link_size_big">+38 096 111 11 11</a>
+            </li>
+            <li class="mob-menu-contacts__item">
+              <a href="" class="mob-menu-contacts__link mob-menu-contacts__link_size_small">info@devstudio.com</a>
+            </li>
+          </ul>
+          <ul class="mob-menu-social list">
+            <li class="mob-menu-social__item">
+              <a href="" class="mob-menu-social__link">Instagram</a>
+            </li>
+            <li class="mob-menu-social__item">
+              <a href="" class="mob-menu-social__link">Twitter</a>
+            </li>
+            <li class="mob-menu-social__item">
+              <a href="" class="mob-menu-social__link">Facebook</a>
+            </li>
+            <li class="mob-menu-social__item">
+              <a href="" class="mob-menu-social__link">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+        
     </div>
     </div>
-    
-    </header> -->
+</div>
+    </header>
 
 
 
@@ -443,7 +496,7 @@
     </main>
   
   
-  <!-- <footer class="footer">
+  <footer class="footer">
       <div class="container">
           <div class="footer-flex">
           <div class="footer-address">
@@ -523,7 +576,7 @@
         </div>
          </div>
 
-  </footer> -->
+  </footer>
 
   <div class="backdrop is-hidden" data-modal>
       <div class="backdrop-form">
@@ -591,5 +644,6 @@
       </div>
   </div>
   <script src="./js/modal.js"></script>
+  <script src="./js/menu.js"></script>
 </body>
 </html>
