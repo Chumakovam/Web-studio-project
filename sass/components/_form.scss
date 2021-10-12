@@ -1,11 +1,15 @@
 .modal-form {
     display: flex;
     flex-direction: column;
-    width: 528px;
+    width: 450px;
+    
    
     margin: 0;
     padding: 40px;
-
+    @media screen and (min-width: 1200px){
+      max-width: 1200px;
+      width: 528px;
+      }
   }
   
   .modal-form__title {

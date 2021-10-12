@@ -191,9 +191,15 @@ body {
 .modal-form {
   display: flex;
   flex-direction: column;
-  width: 528px;
+  width: 450px;
   margin: 0;
   padding: 40px;
+}
+@media screen and (min-width: 1200px) {
+  .modal-form {
+    max-width: 1200px;
+    width: 528px;
+  }
 }
 
 .modal-form__title {
@@ -1228,6 +1234,13 @@ h2 {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .footer-desc {
+    max-width: 1200px;
+    display: flex;
+  }
+}
+
 .footer-address {
   text-align: center;
 }
@@ -1236,6 +1249,14 @@ h2 {
     max-width: 768px;
     margin-right: 165px;
     margin-left: 76px;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-address {
+    max-width: 1200px;
+    margin-right: 71px;
     align-items: center;
     justify-content: center;
   }
@@ -1286,6 +1307,8 @@ address {
 @media screen and (min-width: 1200px) {
   .form-subscribe {
     max-width: 1200px;
+    display: flex block;
+    margin-left: 93px;
   }
 }
 

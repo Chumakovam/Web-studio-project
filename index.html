@@ -498,6 +498,7 @@
   
   <footer class="footer">
       <div class="container">
+          <div class="footer-desc">
           <div class="footer-flex">
           <div class="footer-address">
     <a href="./index.html" class="logo logo--color-white"> <span>Web</span> Studio</a>
@@ -557,25 +558,25 @@
             <form action="#" class="form-subscribe">
 
                 <p class="form-subscribe__title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</p>
-                <label class="form-subscribe__placeholder">
+                <div class="form-subscribe__placeholder">
                    
                       <input type="mail" name="user-mail" class="form-subscribe__input" placeholder="E-mail "
                               pattern="***@mail.com" title="@" required>    
-
-                  </label>
+                              <button type="" class="button button__subscribe">Подписаться
+                                <svg class="button__icon" width="24" height="24" >
+                                    <use href="./images/svg/symbol-defs.svg#icon-send-2">
+            
+                                    </use>
+                                </svg>
+                              </button>  
+                  </div>
                  
-                  <button type="" class="button button__subscribe">Подписаться
-                    <svg class="button__icon" width="24" height="24" >
-                        <use href="./images/svg/symbol-defs.svg#icon-send-2">
-
-                        </use>
-                    </svg>
-                  </button>  
+                
             </form>
 
         
          </div>
-
+</div>
   </footer>
 
   <div class="backdrop is-hidden" data-modal>

@@ -9,8 +9,15 @@
         max-width: 768px;
         display: flex;
         }
-        
    
+}
+
+.footer-desc{
+    @media screen and (min-width: 1200px){
+        max-width: 1200px;
+        display: flex;
+        
+        }
 }
 .footer-address{
         text-align: center;
@@ -21,6 +28,14 @@
             align-items: center;
             justify-content: center;
           }
+          @media screen and (min-width: 1200px){
+            max-width: 1200px;
+            margin-right: 71px;
+            // display: flex;
+            // margin-left: 215px;
+            align-items: center;
+            justify-content: center;
+            }
             } 
     
     
@@ -70,13 +85,15 @@ address {
     // display: flex block;
     // margin-left: 93px;
     @media screen and (min-width: 768px){
-        max-width: 768px;
+      
      flex-direction: column;
+     align-items: center;
      display: flex;
         }
         @media screen and (min-width: 1200px){
-            max-width: 1200px;
-        
+           
+          display: flex block;
+  
             }
 }
 .form-subscribe__title {
