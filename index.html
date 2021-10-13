@@ -69,15 +69,16 @@
 </button>
     </div>
     <div class="mob-menu is-hidden" >
+        <button class="btn-close">
+            <svg class="modal-close-icon" width="18" height="18">
+              <use href="./images/svg/symbol-defs.svg#icon-close-black-18dp-2-1-2"></use>
+            </svg>
+            </button>
       <div class="container">
-      <button class="btn-close">
-        <svg class="modal-close-icon" width="18" height="18">
-          <use href="./images/svg/symbol-defs.svg#icon-close-black-18dp-2-1-2"></use>
-        </svg>
-        </button>
+      
         <ul class="mob-menu-list list">
           <li class="mob-menu-list__item">
-            <a href="" class="mob-menu-list__link">Студия</a>
+            <a href="" class="mob-menu-list__link current">Студия</a>
           </li>
           <li class="mob-menu-list__item">
             <a href="portfolio.html" class="mob-menu-list__link">Портфолио</a>
@@ -180,7 +181,7 @@
         </section>
 
         <!-- Чем мы занимаемся -->
-        <!-- <section class="about">
+        <section class="about">
             <div class="container">
             <h2>Чем мы занимаемся</h2>
             <ul class="about__list">
@@ -206,7 +207,7 @@
                 </li>
             </ul>
         </div>
-        </section> -->
+        </section>
            
         <!-- Наша команда -->
         <section class="section team">
@@ -560,9 +561,9 @@
                 <p class="form-subscribe__title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</p>
                 <div class="form-subscribe__placeholder">
                    
-                      <input type="mail" name="user-mail" class="form-subscribe__input" placeholder="E-mail "
+                      <input type="email" name="user-mail" class="form-subscribe__input" placeholder="E-mail "
                               pattern="***@mail.com" title="@" required>    
-                              <button type="" class="button button__subscribe">Подписаться
+                              <button type="submit" class="button button__subscribe">Подписаться
                                 <svg class="button__icon" width="24" height="24" >
                                     <use href="./images/svg/symbol-defs.svg#icon-send-2">
             
@@ -616,7 +617,7 @@
               Почта
                 <span class="modal-form__wrapper">
                     
-                    <input type="mail" name="user-mail" class="modal-form__input" placeholder=""
+                    <input type="email" name="user-mail" class="modal-form__input" placeholder=""
                         pattern="" title="@" required>
                         <svg class="modal-form__icon" width="15" height="12">
                             <use href="./images/svg/symbol-defs.svg#icon-e-mail-2"> </use>

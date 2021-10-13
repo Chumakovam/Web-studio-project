@@ -8,6 +8,10 @@ h2 {
 .about{
     padding-top: o;
     padding-bottom: 94px;
+    display: none;
+    @media screen and (min-width: 1200px){
+        display: block;
+         }
 }
 .about__list {
         display: flex;

@@ -23,8 +23,9 @@
     // display: flex;
     // flex-wrap: wrap;
     margin-top: 40px;
-    margin-right: auto;
-    margin-left: auto;
+    // margin-right: auto;
+    // margin-left: auto;
+    justify-content: center;
     @media screen and (min-width: 768px) {
       display: flex;
       flex-wrap: wrap;
@@ -94,7 +95,7 @@
     transform: translateY(100%);
     // padding-top:  24px;
     // padding-bottom: 24px;
-    padding: 2px 18px;
+    padding: 77px 24px;
 
     font-weight: 400;
     font-size: 18px;

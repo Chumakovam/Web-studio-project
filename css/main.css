@@ -75,6 +75,7 @@ body {
   display: block;
   padding: 10px 32px;
   text-align: center;
+  line-height: 30px;
 }
 @media screen and (min-width: 768px) {
   .button__hero {
@@ -289,7 +290,7 @@ body {
 .modal-form__checkbox {
   position: relative;
   margin-left: 20px;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.7;
   letter-spacing: 0.03em;
   font-weight: 400;
@@ -299,7 +300,7 @@ body {
   content: "";
   position: absolute;
   left: -20px;
-  top: 6px;
+  top: 2px;
   width: 15px;
   height: 15px;
   border: 1px solid #212121;
@@ -307,7 +308,7 @@ body {
 }
 
 .modal-form__link {
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.7;
   letter-spacing: 0.03em;
   font-weight: 400;
@@ -411,8 +412,7 @@ body {
 
 .card-set {
   margin-top: 40px;
-  margin-right: auto;
-  margin-left: auto;
+  justify-content: center;
 }
 @media screen and (min-width: 768px) {
   .card-set {
@@ -479,7 +479,7 @@ body {
   height: 100%;
   /* overflow: auto; */
   transform: translateY(100%);
-  padding: 2px 18px;
+  padding: 77px 24px;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.5;
@@ -550,9 +550,6 @@ body {
   margin-right: 8px;
   margin-bottom: 15px;
 }
-.filters__item:hover, .filters__item:focus {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
 
 .filters__button {
   font-weight: 500;
@@ -567,6 +564,9 @@ body {
   background-color: #F5F4FA;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.filters__button .current {
+  color: #2196F3;
+}
 .filters__button:hover, .filters__button:focus {
   background-color: #2196F3;
   color: #FFFFFF;
@@ -580,6 +580,12 @@ body {
   border-bottom: 1px solid rgba(117, 117, 117, 0.2);
 }
 
+.nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 .nav .burger:hover,
 .nav .burger:focus {
   fill: #2196f3;
@@ -727,6 +733,9 @@ body {
   padding: 48px 0 48px 25px;
   z-index: 5;
 }
+.mob-menu .current {
+  color: #2196F3;
+}
 @media screen and (max-width: 480px) {
   .mob-menu {
     margin-bottom: 10px;
@@ -745,23 +754,16 @@ body {
 }
 
 .menu-open {
-  background: unset;
   border: none;
-  font-size: 26px;
-  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
-  top: 15px;
-  right: 35px;
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   padding: 0;
   border-radius: 50%;
   background-color: transparent;
-  box-shadow: 1px rgba(0, 0, 0, 0.2);
   cursor: pointer;
-  border: 1px solid rgba(0, 0, 0, 0.1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -781,10 +783,16 @@ body {
 
 .btn-close {
   position: absolute;
-  right: 35px;
-  top: -22px;
+  right: 15px;
+  top: 10px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
 }
 
 .mob-menu-contacts {
@@ -844,12 +852,15 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  max-width: 1600px;
 }
 
 .hero {
-  max-width: 100%;
   padding-top: 118px;
   padding-bottom: 118px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mob/hero_mob@2x.jpg);
 }
 @media screen and (min-width: 768px) {
@@ -860,6 +871,7 @@ body {
 @media screen and (min-width: 1200px) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/desctop/hero_des@2x.jpg);
+    padding: 200px;
   }
 }
 
@@ -979,6 +991,7 @@ body {
 .advantages {
   padding: 0;
   list-style: none;
+  justify-content: center;
 }
 @media screen and (min-width: 768px) {
   .advantages {
@@ -1064,6 +1077,12 @@ h2 {
 .about {
   padding-top: o;
   padding-bottom: 94px;
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .about {
+    display: block;
+  }
 }
 
 .about__list {

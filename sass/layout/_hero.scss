@@ -7,7 +7,7 @@
        background-repeat: no-repeat;
    background-size: cover;
    background-position: center;
-   
+   max-width: 1600px;
    // @media screen and (min-width: 768px) {
    //     background-image: unset;
    // }
@@ -21,9 +21,12 @@
 
 
 .hero {
-   max-width: 100%;
+   // max-width: 100%;
    padding-top: 118px;
    padding-bottom: 118px;
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
    // height: 400px;
    background-image: linear-gradient(
      rgba(47, 48, 58, 0.4),
@@ -43,6 +46,7 @@
          rgba(47, 48, 58, 0.4),
          rgba(47, 48, 58, 0.4)
        ), url(../images/desctop/hero_des@2x.jpg);
+       padding: 200px;
    }
 } 
 
