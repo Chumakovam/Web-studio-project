@@ -27,7 +27,7 @@
    background-size: cover;
    background-position: center;
    background-repeat: no-repeat;
-   margin: 0 auto;
+
    // height: 400px;
    background-image: linear-gradient(
      rgba(47, 48, 58, 0.4),
@@ -48,6 +48,7 @@
          rgba(47, 48, 58, 0.4)
        ), url(../images/desctop/hero_des@2x.jpg);
        padding: 200px;
+       margin: 0 auto;
    }
 } 
 
